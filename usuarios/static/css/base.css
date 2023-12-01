@@ -1,0 +1,15 @@
+.formulario{
+    margin: 60px 80px;
+    padding: 70px 50px;  
+}
+
+.gradiente {
+    /* fallback for old browsers */
+    background: #7db7d2;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(75, 134, 165, 1), rgba(175, 232, 255, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(175, 232, 255, 1), rgba(75, 134, 165, 1))
+}

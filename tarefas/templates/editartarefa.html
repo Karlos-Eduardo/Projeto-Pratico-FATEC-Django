@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{%load crispy_forms_tags %} 
+
+{% block 'head' %} 
+<link rel="stylesheet" type="text/css" href="{% static 'css/tarefas.css' %}" />
+{% endblock %}
+
+{% block 'title' %}
+    {{terefa.titulo}}
+{% endblock %}
+
+{% block 'classbody' %}
+
+{% endblock %}
+
+{% block 'body' %}
+<div class="offset-1 col-10 list-div mt-5 pt-5">
+    <h1>Editando {{tarefa.titulo}}</h1>
+    <form method="POST">
+        {% csrf_token %}
+    
+        {{ form|crispy }}
+        <div class="text-center">
+            <input type="submit" class="btn btn-success" value="Editar Tarefa">
+        </div>
+      </form>    
+</div>
+{% endblock %}

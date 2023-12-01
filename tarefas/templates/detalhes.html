@@ -1,0 +1,53 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block 'head' %} 
+
+{% endblock %}
+
+{% block 'title' %}
+    Tarefas
+{% endblock %}
+
+{% block 'classbody' %}
+
+{% endblock %}
+
+{% block 'body' %}
+<div class="offset-1 col-10 mt-5">
+    <h1>Detalhes da Tarefa: {{ tarefa.titulo }}</h1>
+        
+        <table class="table mt-4" >
+            <thead>
+            <tr>
+                <th scope="col">Detalhes</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td><p>{{ tarefa.descricao }}</p></td>
+                    </tr>
+            </tbody>
+        </table>
+        
+        <table class="table mt-4">
+            <thead>
+            <tr>
+                <th scope="col">Críado em</th>
+                <th scope="col">Atualizado em</th>
+                <th scope="col">Status</th>
+                <th scope="col">User</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>{{ tarefa.criado }}</td>
+                        <td>{{ tarefa.atualizado }}</td>
+                        <td>{{ tarefa.status }}</td>
+                        <td>{{ tarefa.user }}</td>
+                    </tr>
+            </tbody>
+        </table>
+</div>
+    
+{% endblock %}

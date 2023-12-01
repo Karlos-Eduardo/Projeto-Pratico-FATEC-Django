@@ -1,0 +1,54 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block 'head' %} 
+<link rel="stylesheet" type="text/css" href="{% static 'css/sobre.css' %}" />
+{% endblock %}
+
+{% block 'title' %}
+    Tarefas
+{% endblock %}
+
+{% block 'classbody' %}
+class="gradiente" 
+{% endblock %}
+
+{% block 'body' %}
+
+<div class="d-flex " style="height: 100%;">
+    <div class="container align-self-center">
+        <div class="col">
+            <div class="text-center">
+                <div class="images mx-auto d-inline-block bg-white rounded-4">
+                    <img src="{% static 'images/karlos.jpeg' %}" alt="Foto Karlos">
+                    <pre>
+Karlos Eduardo Cristóvão 
+Silva Nunes
+2840482113041</pre>
+                </div>
+                <div class="images mx-auto d-inline-block bg-white rounded-4">
+                    <img src="{% static 'images/diego.jpg' %}" alt="Foto Karlos">
+                    <pre>
+Diego Carmino Moretti
+2840482113034
+                    </pre>
+                </div>
+            </div>
+            <div class="col-5 container bg-white rounded-4 mt-1">
+                    <pre> 
+<strong>Tema:</strong> Lista de Tarefas                        
+<strong>Objetivo:</strong> Desenvolver uma aplicação de lista de 
+tarefas que te ajuda a organizar e realizar suas tarefas de 
+forma simples e eficaz. 
+Com To Do List, você pode:
+• Adicionar tarefas ilimitadas com descrição, data, hora,
+  prioridade e lembrete.
+• Marcar as tarefas concluídas com um toque e acompanhar seu
+  progresso.
+                    </pre>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    
+{% endblock %}

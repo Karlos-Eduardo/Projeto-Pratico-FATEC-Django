@@ -1,0 +1,12 @@
+.images{
+    width: 20.5%;
+    height: 40%;
+}
+
+.images img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5%;
+}

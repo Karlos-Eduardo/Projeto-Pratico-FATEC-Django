@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block 'title' %}
+    Login Registration
+{% endblock %}
+
+{% block 'classbody' %}
+class="gradiente" 
+{% endblock %}
+
+{% block 'body' %}
+
+    <div class="d-flex " style="height: 100%;">
+        <div class="container align-self-center">
+            <div class="col">
+                <div class="col-md-12" style="width: 50%; margin: 0 auto;">
+                    <div class="formulario bg-dark text-white" style="border-radius: 1rem;">
+                        <div class="text-center mb-5">
+                            <h1>Login</h1>
+                        </div>
+                        <form action="{% url 'login' %}" method="POST">{% csrf_token %}
+                            <div class="mb-3">
+                                <label class="form-label">Usuário</label>
+                                <input class="form-control" type="text" placeholder="Nome usuário..." name="username">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Senha</label>
+                                <input class="form-control" type="password" placeholder="Senha..." name="password">
+                            </div>
+                            <div class="text-center mt-5">
+                                <button type="submit" value="enviar" class="btn btn-primary">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
